@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="/image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<header class="header">
+    <div class="menu container">
+        <a href="#" class="logo">AnimeStickersWorld</a>
+        <input type="checkbox" id="menu" label for="menu"><img src="image/menu.png" class="menu-icono" alt=""></label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div>
+            <ul>
+                <li class="submenu">
+                    <img src="image/car.svg" id="img-carrito" alt="">
+                    <div id="carrito">
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+<main class="container-contacto">
+
+
+    <img src="image/(6).png">
+    <div class="contacto">
+        <h2>Contacto</h2>
+        <p>Si tienes alguna pregunta, comentario o simplemente quieres saludar, ¡nos encantaría saber de ti!</p>
+        <br>
+        <p><strong>Email:</strong> <a href="mailto:contacto@animestickersworld.com">contacto@animestickersworld.com</a>
+        </p>
+        <p><strong>Teléfono:</strong> +123 456 7890</p>
+        <p><strong>Dirección:</strong> Calle Falsa 123, Ciudad, País</p>
+        <br>
+
+
+
+        <div class="social-media">
+            <h3>Síguenos en nuestras redes sociales:</h3>
+            <a id="logo" href="https://facebook.com/animestickersworld" target="_blank"><img src="image/logo (2).png"
+                    alt="Facebook" class="icon"></a>
+            <a id="logo" href="https://twitter.com/animestickersworld" target="_blank"><img src="image/logo (1).png"
+                    alt="Twitter" class="icon"></a>
+            <a id="logo" href="https://instagram.com/animestickersworld" target="_blank"><img src="image/logo (3).png"
+                    alt="Instagram" class="icon"></a>
+            <a id="logo" href="https://linkedin.com/company/animestickersworld" target="_blank"><img
+                    src="image/logo (4).png" alt="LinkedIn" class="icon"></a>
+        </div>
+    </div>
+
+    <br><br>
+    <br>
+
+    <div class="form-contacto">
+        <h1>Contacto</h1>
+        <form action="#" method="#">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+
+    </div>
+
+</main>
+
+
+<div id="footer"></div>
+
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
+
+
+
+</body>
+
+</html>
