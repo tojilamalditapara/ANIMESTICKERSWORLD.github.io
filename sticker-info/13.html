@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/info.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacion</title>
+</head>
+<header class="header">
+    <div class="menu container">
+        <a href="#" class="logo">AnimeStickersWorld</a>
+
+
+
+        <input type="checkbox" id="menu" />
+        <label for="menu"><img src="image/menu.png" class="menu-icono" alt=""></label>
+
+
+        <nav class="navbar">
+
+
+
+
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../servicios.html">Servicios</a></li>
+                <li><a href="../productos.html">Productos</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div>
+            <ul>
+                <li class="submenu">
+                    <img src="../image/car.svg" id="img-carrito" alt="">
+                    <div id="carrito">
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+
+
+<section id="main-info">
+    <div class="product">
+        <img src="../image/(5).png" alt="Sticker Gato Espacial" class="product-img">
+        <div class="product-txt">
+            <h3>Nombre</h3>
+            <p>
+                Informacion Informacio Informacio Informacio Informacio Informacio Informacio Informacio Informacio
+                Informacio Informacio Informacio Informacio Informacio Informacio Informacio Informacio Informacio
+                Informacio Informacio Informacio Informacio Informacio Informacio Informacio Informacio Informacio
+                Informacio Informacio Informacio Informacio Informacio Informacio Informacio Informacio Informacio
+                Informacio Informacio Informacio Informacio Informacio Informacio Informacio
+            </p>
+            <p class="precio">$5.00</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<div id="footer"></div>
+
+<script>
+    fetch('/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
+
+
+
+</body>
+
+</html>
