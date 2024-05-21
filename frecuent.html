@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="/image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/frecuent.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">AnimeStickersWorld</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu"><img src="image/menu.png" class="menu-icono" alt=""></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../servicios.html">Servicios</a></li>
+                    <li><a href="../productos.html">Productos</a></li>
+                    <li><a href="../contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="../image/car.svg" id="img-carrito" alt="">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section>
+
+        <img src="../image/naruto (1).png">
+        <h1>Preguntas Frecuentes</h1>
+
+        <div class="preguntas">
+            <div class="pregunta">
+                <h3>¿Cómo puedo realizar un pedido?</h3>
+                <p>Puedes realizar un pedido fácilmente navegando por nuestra colección de productos y añadiendo los que
+                    te gusten al carrito de compras. Una vez que hayas seleccionado todos los productos que deseas
+                    comprar, puedes proceder a la página de pago y seguir las instrucciones para completar tu pedido.
+                </p>
+            </div>
+            <div class="pregunta">
+                <h3>¿Cuáles son los métodos de pago aceptados?</h3>
+                <p>Aceptamos una variedad de métodos de pago, incluyendo tarjetas de crédito, tarjetas de débito y
+                    PayPal. Puedes seleccionar tu método de pago preferido durante el proceso de pago.</p>
+            </div>
+            <div class="pregunta">
+                <h3>¿Cuánto tiempo tardará en llegar mi pedido?</h3>
+                <p>El tiempo de entrega de tu pedido dependerá de tu ubicación y del método de envío seleccionado. Por
+                    lo general, los pedidos se procesan y envían dentro de 1-2 días hábiles, y el tiempo de entrega
+                    puede variar entre 5-10 días hábiles.</p>
+            </div>
+            <div class="pregunta">
+                <h3>¿Puedo cancelar o modificar mi pedido?</h3>
+                <p>Una vez que hayas completado tu pedido, no podrás realizar cambios o cancelaciones directamente a
+                    través del sitio web. Sin embargo, puedes ponerte en contacto con nuestro equipo de atención al
+                    cliente lo antes posible para discutir cualquier cambio o cancelación potencial.</p>
+            </div>
+            <div class="pregunta">
+                <h3>¿Ofrecen envío internacional?</h3>
+                <p>Sí, ofrecemos envío internacional a la mayoría de los países. Durante el proceso de pago, podrás
+                    seleccionar tu país de destino y ver las opciones de envío disponibles, junto con los costos y los
+                    tiempos de entrega estimados.</p>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <div id="footer"></div>
+
+    <script>
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+
+
+</body>
+
+</html>
