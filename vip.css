@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #242430;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    color: #7270EC;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FEFFFF;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #7270EC;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu-label {
+    cursor: pointer;
+    display: none;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4E4B5076;
+    padding: 20p;
+    min-width: 400px;
+}
+
+
+
+
+
+
+#vaciar-carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submenu #carrito {
+    border-radius: 3px 3px 20px 20px;
+    display: none;
+    max-height: 800px;
+    overflow: auto;
+}
+
+.submenu #carrito::-webkit-scrollbar {
+    width: 8px;
+
+}
+
+
+.submenu #carrito::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+
+    border-radius: 10px;
+
+}
+
+.submenu #carrito::-webkit-scrollbar-track {
+    background: transparent;
+
+}
+
+
+.form-contacto {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="submit"] {
+    background-color: #7270EC;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #5b5bb8;
+}
+
+
+
+
+
+
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    color: #FEFFFF;
+}
+
+.btn-3 {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 14px;
+    color: #FEFFFF;
+    border: 1px solid #7270EC;
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+.btn-3:hover {
+    background-color: #7270EC;
+}
+
+.footer {
+    display: flex;
+    padding: 30px 0;
+}
+
+.link {
+    width: 20%;
+}
+
+.link h3 {
+    color: #FEFFFF;
+    margin-bottom: 20px;
+}
+
+.link a {
+    color: #747B8F;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.link p {
+    color: #747B8F;
+    font-size: 16px;
+}
+
+
+
+.container-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    font-size: 17PX;
+    text-transform: capitalize;
+    color: white;
+    margin: 5% 30%;
+}
+
+.container-contacto img {
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.3));
+    mask-image: linear-gradient(to top, transparent, black);
+
+    width: 500px;
+}
+
+
+#logo img {
+
+    mask-image: none;
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+@keyframes glow {
+
+
+    50% {
+        box-shadow:
+            0 0 5px rgba(255, 255, 255, 0.2),
+            0 0 40px #4a48a921,
+            0 0 30px #4a48a979,
+            0 0 20px #4a48a9b6,
+            0 0 10px #4a48a9;
+
+    }
+
+
+}
+
+
+form {
+    border-radius: 10px;
+    animation: glow 10s infinite;
+    width: 500px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #242430;
+}
+
+main {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10%;
+
+
+}
+
+
+
+
+
+@media(max-width:991px) {
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked~,
+    .navbar {
+        display: initial;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .submenu:hover #carrito {
+        min-width: 100%;
+    }
+
+    .mySwiper-1 {
+        width: 300px;
+    }
+
+    .swiper-slide {
+        padding: 0 30px 50px 30px;
+    }
+
+    .header-content {
+        padding: 100px 0 50px 0;
+    }
+
+    .header-info {
+        padding: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt {
+        width: 100%;
+    }
+
+    .header-txt h1 {
+        font-size: 40px;
+    }
+
+    .header-img {
+        width: 100%;
+    }
+
+    .header-img img {
+        width: 200px;
+    }
+
+    .prices {
+        flex-direction: column;
+    }
+
+    .price-1 {
+        margin: 0;
+    }
+
+    .btn-1 {
+        margin: 20px 0;
+    }
+
+    .promos {
+        padding: 30px;
+    }
+
+    .promos h2 {
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+
+    .categories {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .categorie {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .categorie-1 {
+        width: 100%;
+        margin-bottom: 25px;
+        order: -1;
+    }
+
+    .categorie-img {
+        width: 100%;
+    }
+
+    .products {
+        padding: 30px;
+    }
+
+    .products h2 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+
+
+    .link {
+        width: 100%;
+    }
+
+
+
+
+}
