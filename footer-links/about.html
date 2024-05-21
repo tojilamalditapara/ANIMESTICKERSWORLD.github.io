@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="/image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/about.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+</head>
+<header class="header">
+    <div class="menu container">
+        <a href="#" class="logo">AnimeStickersWorld</a>
+        <input type="checkbox" id="menu" />
+        <label for="menu"><img src="image/menu.png" class="menu-icono" alt=""></label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../servicios.html">Servicios</a></li>
+                <li><a href="../productos.html">Productos</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div>
+            <ul>
+                <li class="submenu">
+                    <img src="../image/car.svg" id="img-carrito" alt="">
+                    <div id="carrito">
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+
+
+<section>
+    <img src="../image/naruto (2).png">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos una apasionada comunidad de amantes del anime y los stickers. En AnimeStickerWorld, nos dedicamos a
+        proporcionar la mejor experiencia para los fanáticos del anime al ofrecer una amplia variedad de stickers
+        exclusivos de alta calidad.</p>
+    <br>
+    <p>Nuestro equipo está formado por entusiastas del anime que comparten su amor por este arte único. Estamos
+        comprometidos a ofrecer stickers que capturen la esencia y la belleza de tus personajes favoritos.</p>
+    <br>
+    <p>En AnimeStickerWorld, creemos en la calidad, la creatividad y la autenticidad. Cada sticker que ofrecemos ha sido
+        cuidadosamente seleccionado y diseñado para satisfacer las demandas de nuestra comunidad.</p>
+    <br>
+    <p>Explora nuestra colección y únete a nosotros en nuestro viaje para celebrar el maravilloso mundo del anime a
+        través de nuestros stickers. ¡Esperamos inspirar tu pasión y desatar tu creatividad!</p>
+</section>
+
+
+
+<!-- 
+<Ø|<
+ -->
+
+
+
+<div id="footer"></div>
+
+<script>
+    fetch('/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
+
+
+</body>
+
+
+</html>
